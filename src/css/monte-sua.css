@@ -1,0 +1,92 @@
+.caixa-de-texto {
+  background-color: #fafafa;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 1.5%;
+  box-shadow: #f5deb3 0px 5px 15px;
+}
+.alinhar {
+  text-align: center;
+}
+main {
+  margin-top: 100px;
+  background-image: url("/madeira-bg.png");
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.enviar-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enviar-button {
+  padding: 10px 20px;
+  width: auto;
+  height: auto;
+  background-color: #f5deb3;
+  border: 1px solid black;
+  border-radius: 10%;
+  font-size: medium;
+  color: black;
+  font-weight: 500;
+}
+
+form {
+  font-size: large;
+}
+
+.container {
+  display: flex;
+  margin: 165px 2rem;
+}
+
+.div1,
+.div2 {
+  flex: 1;
+  width: 50%;
+}
+
+.container1 {
+  display: flex;
+  margin: 1rem 2rem;
+}
+
+.div11,
+.div21 {
+  flex: 1;
+  width: 50%;
+}
+
+#mensagem {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.color {
+  border: 1px solid #000000;
+  background-color: #ebe3e3;
+}
+
+div #divSabor1,
+#divSabor2,
+#divSabor3 {
+  font-size: large;
+}
+
+select {
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+}

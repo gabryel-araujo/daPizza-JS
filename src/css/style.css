@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+*:visited {
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* 1rem = 10px; 3.2rem = 32px; 1.4rem 2.5rem */
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-image: url("");
+  background-repeat: repeat;
+}
+
+p,
+h1,
+h2,
+h3 {
+  cursor: context-menu;
+}
+
+header :nth-child(7) {
+  display: none;
+}
+
+:target {
+  scroll-margin-top: 18rem;
+}
+
+#nav-bar {
+  display: grid;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10rem;
+  background-color: #f5deb3;
+  box-shadow: 0 0.3rem 0.1rem rgba(0, 0, 0, 0.27);
+  grid-template-rows: 10rem;
+  grid-template-areas: "imagem cardapio monte-sua-pizza login ";
+  justify-items: center;
+  justify-content: start;
+  padding: 0;
+  column-gap: 0;
+  z-index: 1;
+  gap: 1rem;
+}
+
+#logo {
+  width: 12rem;
+  height: 12rem;
+}
+
+#pizza-1 {
+  width: 53rem;
+  height: 50rem;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  background-color: #1c1f21;
+}
+
+#titulo-apresentacao {
+  color: wheat;
+  font-family: "Fredoka One", serif;
+  font-weight: 600;
+  font-size: 4.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+#firstScreen {
+  margin-top: 10rem;
+}
+
+#apresentacao {
+  background-image: url("../backgroundpizza.png");
+  background-repeat: repeat;
+  width: 100vw;
+  background-attachment: fixed;
+  box-shadow: 0 0.5rem rgba(0, 0, 0, 0.27);
+}
+
+#logo-central {
+  margin-top: 10rem;
+}
+
+#video {
+  border-radius: 1.2em;
+  box-shadow: 0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.27);
+}
+
+#mapa {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.27);
+}
+
+#cardapio {
+  margin-top: 5rem;
+}
+
+#descricao-pizzaria {
+  padding-bottom: 3.5rem;
+}
+
+.nav-imagem {
+  grid-area: imagem;
+}
+
+.nav-cardapio {
+  grid-area: cardapio;
+}
+
+.nav-carrinho {
+  grid-area: carrinho;
+  cursor: pointer;
+}
+
+.nav-localizacao {
+  grid-area: localizacao;
+}
+
+.nav-monte-sua-pizza {
+  grid-area: monte-sua-pizza;
+}
+
+.firstScreen {
+  font-family: "Fredoka One", serif;
+}
+
+.lorem {
+  font-family: "Pacifico", serif;
+  font-size: 2rem;
+  text-shadow: 0.05rem 0.05rem 0.1rem wheat, 0.1rem 0.1rem 0.2rem black;
+  margin-top: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.links {
+  font-family: "Fredoka One", serif;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.links a {
+  color: black;
+  font-size: 2rem;
+  transition: 0.5s all;
+}
+
+.links a:link {
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #f39b6a;
+  text-shadow: 0.1rem 0.1rem 0.3rem #1c1f21;
+  transform: scale(1.2);
+}
+
+.icon {
+  padding: 3rem;
+}
+
+.img-pizzas {
+  width: 26rem;
+  height: 26rem;
+  border-radius: 100%;
+  transition: 0.5s all;
+}
+
+.img-pizzas:hover {
+  cursor: zoom-in;
+  transform: scale(1.1);
+}
+
+.add-carrinho {
+  color: white;
+  background-color: #1c1f21;
+  border-radius: 0.5rem;
+  height: 6rem;
+  width: 18rem;
+  cursor: pointer;
+}
+
+.add-carrinho:hover {
+  transition: 0.8s all;
+  color: black;
+  background-color: #f5deb3;
+  border: 0.1rem solid #f5deb3;
+  cursor: pointer;
+}
+
+.descricao-sabor {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", serif;
+  align-items: center;
+  padding: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.alinhamento-pizzas {
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.rows {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.rows-tradicionais {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.titulos {
+  border-top: 0.05rem solid #f5deb3;
+  align-self: center;
+  font-size: 4rem;
+  font-family: "Pacifico", serif;
+  text-shadow: 0.1rem 0.1rem 0.1rem #f5deb3, 0.3rem 0.3rem 0.1rem black;
+  color: #1c1f21;
+}
+
+.alinhamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: grid;
+  grid-template-areas: "imagem descricao icone-insta icone-face";
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f5deb3;
+  border-top: 0.1rem solid darkgoldenrod;
+  height: 10rem;
+  width: 100%;
+  margin-top: auto;
+  bottom: 0;
+}
+
+.footer-image {
+  width: 10rem;
+  grid-area: imagem;
+}
+
+.footer-escrita {
+  grid-area: descricao;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.fa-instagram {
+  grid-area: icone-insta;
+}
+
+.fa-facebook {
+  grid-area: icone-face;
+}
+
+.footer i {
+  padding: 2.5rem;
+  font-size: 4rem;
+  color: black;
+}
+
+.footer i:visited {
+  color: black;
+}
+
+.footer-block {
+  display: block;
+}
+
+.localizacao-mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0 5em 0;
+}
+
+.nav-bar-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fa-frown {
+  font-size: 10rem;
+}
+
+.item-amarelo {
+  background-color: yellow;
+  color: black;
+}
+
+.item-preto {
+  background-color: black;
+  color: white;
+}
+
+.fita-perigo p {
+  font-family: "Oswald", serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.grid-container-cardapio {
+  display: grid;
+  justify-items: center;
+}
+
+@media (max-width: 1300px) {
+  #pizza-1 {
+    display: none;
+  }
+
+  #titulo-apresentacao {
+    border-top: 0.05em solid #f5deb3;
+    align-self: center;
+    font-size: 4.2rem;
+    font-family: "Pacifico", serif;
+    text-shadow: 0.1rem 0.1rem 0.1rem #f5deb3, 0.3rem 0.3rem 0.1rem black;
+    color: #1c1f21;
+  }
+
+  #about {
+    justify-content: center;
+    background-color: white;
+  }
+
+  #about #div-video iframe {
+    width: 40rem;
+    height: 21rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .footer-escrita {
+    display: none;
+  }
+
+  .footer {
+    grid-template-areas: "icone-insta imagem icone-face";
+  }
+
+  #mapa {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 590px) {
+  #about #div-video iframe {
+    width: 30rem;
+    height: 15rem;
+  }
+
+  .lorem {
+    font-size: 1.4rem;
+  }
+
+  #titulo-apresentacao {
+    font-size: 3.6rem;
+  }
+
+  #logo-central {
+    width: 100%;
+  }
+
+  header :nth-child(6) {
+    display: none;
+  }
+
+  /* header :nth-child(7){
+    display: block;
+  }  */
+
+  .em-producao :nth-child(2) {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 905px) {
+  #nav-bar {
+    grid-template-rows: 10rem repeat(5, 1rem);
+    grid-template-areas: "imagem monte-sua-pizza login";
+  }
+
+  .nav-sobre-nos {
+    display: none;
+  }
+
+  .nav-localizacao {
+    display: none;
+  }
+
+  .nav-cardapio {
+    display: none;
+  }
+}
+
+.bodyCadastro,
+.bodyUsuarios {
+  background-image: url(/madeira-bg.png);
+  background-position: center;
+  background-position-y: -130px;
+}

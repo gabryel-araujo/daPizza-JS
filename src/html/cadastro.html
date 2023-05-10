@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Da Pizza</title>
+    <link rel="icon" href="../public/logoPizzaria.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="nav-bar" class="links">
+        <a class="nav-imagem" href="../../index.html"
+          ><img
+            id="logo"
+            src="../public/logoPizzaria.png"
+            alt="logo da pizzaria"
+        /></a>
+        <a class="links nav-cardapio" href="../index.html#premium"
+          ><i class="fa-solid fa-calendar-minus"></i>Cardápio</a
+        >
+        <a class="links nav-monte-sua-pizza" href="monte-sua.html"
+          ><i class="fa-solid fa-pizza-slice"></i>Monte sua pizza</a
+        >
+        <a class="links nav-login" href="#"
+          ><i class="fa-solid fa-user"></i>Cadastro</a
+        >
+      </nav>
+    </header>
+
+    <div
+      class="min-h-screen p-6 bg-gray-100 flex items-center justify-center bodyCadastro"
+    >
+      <div class="container max-w-screen-lg mx-auto mt-20">
+        <div class="flex justify-center items-center flex-col">
+          <h2 class="font-semibold text-gray-600 titulos mb-5">
+            Faça seu cadastro
+          </h2>
+          <div
+            class="bg-white rounded-[12px] drop-shadow-xl p-4 px-4 md:p-8 mb-6 wheat"
+          >
+            <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-2">
+              <div class="lg:col-span-2">
+                <div
+                  class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-4"
+                >
+                  <div class="md:col-span-5">
+                    <label for="full_name" class="text-2xl"
+                      >Nome Completo:</label
+                    >
+                    <input
+                      type="text"
+                      name="full_name"
+                      id="fullName"
+                      class="h-14 border mt-1 rounded px-4 w-full bg-zinc-300 text-xl"
+                      value=""
+                    />
+                  </div>
+
+                  <div class="md:col-span-5">
+                    <label for="email" class="text-2xl">Email:</label>
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      class="h-14 border mt-1 rounded px-4 w-full bg-zinc-300 text-xl"
+                      value=""
+                      placeholder="email@email.com"
+                    />
+                  </div>
+
+                  <div class="md:col-span-3">
+                    <label for="password" class="text-2xl">Senha</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      class="h-14 border mt-1 rounded px-4 w-full bg-zinc-300 text-xl"
+                      value=""
+                      placeholder="Insira sua senha"
+                    />
+                  </div>
+
+                  <div class="md:col-span-2">
+                    <label for="passwordConfirm" class="text-2xl"
+                      >Repita a senha</label
+                    >
+                    <input
+                      type="password"
+                      name="passwordConfirm"
+                      id="passwordConfirm"
+                      class="h-14 border mt-1 rounded px-4 w-full bg-zinc-300 text-xl"
+                      value=""
+                      placeholder="Insira sua senha"
+                    />
+                  </div>
+
+                  <div class="md:col-span-2">
+                    <label for="zipcode" class="text-2xl">CEP</label>
+                    <input
+                      type="text"
+                      name="zipcode"
+                      id="zipCode"
+                      class="transition-all flex items-center h-14 border mt-1 rounded px-4 w-full bg-zinc-300 text-xl"
+                      placeholder="50000-000"
+                      value=""
+                    />
+                  </div>
+
+                  <div class="md:col-span-2">
+                    <label for="address" class="text-2xl">Endereço:</label>
+                    <input
+                      type="text"
+                      name="address"
+                      id="address"
+                      class="h-14 border mt-1 rounded px-4 w-full bg-zinc-300 text-xl"
+                      value=""
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div class="md:col-span-1">
+                    <label for="number" class="text-2xl">Numero:</label>
+                    <input
+                      type="text"
+                      name="number"
+                      id="number"
+                      class="h-14 border mt-1 rounded px-4 w-full bg-zinc-300 text-xl"
+                      value=""
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div class="md:col-span-2">
+                    <label for="additional" class="text-2xl"
+                      >Complemento:</label
+                    >
+                    <input
+                      type="text"
+                      name="additional"
+                      id="additional"
+                      class="h-14 border mt-1 rounded px-4 w-full bg-zinc-300 text-xl"
+                      value=""
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div class="md:col-span-2">
+                    <label for="additional" class="text-2xl">Bairro:</label>
+                    <input
+                      type="text"
+                      name="neighborhood"
+                      id="neighborhood"
+                      class="h-14 border mt-1 rounded px-4 w-full bg-zinc-300 text-xl"
+                      value=""
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div class="md:col-span-1">
+                    <label for="city" class="text-2xl">Cidade</label>
+                    <input
+                      type="text"
+                      name="city"
+                      id="city"
+                      class="h-14 border mt-1 rounded px-4 w-full bg-zinc-300 text-xl"
+                      value=""
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div class="md:col-span-5 text-right">
+                    <div class="inline-flex items-end">
+                      <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-2xl"
+                        id="btnRegister"
+                      >
+                        Cadastrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-block">
+      <div class="footer">
+        <img class="footer-image" src="../public/logoPizzaria.png" />
+        <p class="footer-escrita">
+          A essência DaPizza vem da transparência, da simplicidade,<br />
+          da força do produto e da sua qualidade palpável.<br />
+          DaPizza, sua melhor opção na hora de pedir pizza!
+        </p>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa fa-brands fa-instagram links"></i
+        ></a>
+        <a href="https://pt-br.facebook.com/" target="_blank"
+          ><i class="fa fa-brands fa-facebook links"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/scriptCadastro.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f1952cfd14.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

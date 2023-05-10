@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Da Pizza</title>
+    <link rel="icon" href="/logoPizzaria.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="apresentacao">
+      <div id="firstScreen" class="firstScreen alinhamento">
+        <img src="/logoPizzaria.png" id="logo-central" />
+      </div>
+    </div>
+    <header>
+      <nav id="nav-bar" class="links">
+        <a class="nav-imagem" href="#"
+          ><img id="logo" src="/logoPizzaria.png" alt="logo da pizzaria"
+        /></a>
+        <a class="links nav-cardapio" href="index.html#premium"
+          ><i class="fa-solid fa-calendar-minus"></i>Cardápio</a
+        >
+        <a class="links nav-monte-sua-pizza" href="html/monte-sua.html"
+          ><i class="fa-solid fa-pizza-slice"></i>Monte sua pizza</a
+        >
+        <a class="links nav-login" href="html/cadastro.html"
+          ><i class="fa-solid fa-user"></i>Cadastro</a
+        >
+      </nav>
+    </header>
+    <main>
+      <div class="flex justify-center items-center p-4 flex-col">
+        <h1 class="text-slate-300 titulos">Premium</h1>
+        <div id="premium" class="grid grid-cols-3 gap-56"></div>
+        <h1 class="text-slate-300 titulos">Tradicionais</h1>
+        <div id="tradicional" class="grid grid-cols-3 gap-56"></div>
+        <h1 class="text-slate-300 titulos">Doces</h1>
+        <div id="doce" class="grid grid-cols-3 gap-56"></div>
+      </div>
+
+      <div class="alinhamento">
+        <h1 class="titulos" id="about-us">Quem somos nós?</h1>
+        <p class="lorem" id="descricao-pizzaria">
+          Há mais de 5 anos no mercado, nos tornamos referência quando o
+          assunto<br />
+          é qualidade, preço acessível e acima de tudo confiança. Nosso time
+          de<br />
+          profissionais são treinados e capacitados para lhe oferecer a
+          melhor<br />
+          experiência que você já teve em um atendimento. Venha nos conhecer!
+        </p>
+      </div>
+
+      <div id="about">
+        <img src="/pizza.png" alt="imagem de pizza" id="pizza-1" />
+        <div id="div-video" class="alinhamento">
+          <h1 id="titulo-apresentacao">Conheça o nosso preparo</h1>
+
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/T3AHBe0I0yc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+      <div class="localizacao-mapa">
+        <h2 class="titulos" id="localizacao">Nossa Localização</h2>
+        <iframe
+          id="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63342.6764697195!2d-34.939388268750044!3d-7.135564299999973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB%20-%20Campus%20Jo%C3%A3o%20Pessoa!5e0!3m2!1sen!2sbr!4v1666495722215!5m2!1sen!2sbr"
+          width="600"
+          height="450"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+    <footer class="footer-block">
+      <div class="footer">
+        <img class="footer-image" src="/logoPizzaria.png" />
+        <p class="footer-escrita">
+          A essência DaPizza vem da transparência, da simplicidade,<br />
+          da força do produto e da sua qualidade palpável.<br />
+          DaPizza, sua melhor opção na hora de pedir pizza!
+        </p>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa fa-brands fa-instagram links"></i
+        ></a>
+        <a href="https://pt-br.facebook.com/" target="_blank"
+          ><i class="fa fa-brands fa-facebook links"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f1952cfd14.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

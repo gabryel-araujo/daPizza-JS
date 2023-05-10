@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Da Pizza</title>
+    <link rel="icon" href="/logoPizzaria.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="h-screen bodyUsuarios">
+    <header>
+      <nav id="nav-bar" class="links">
+        <a class="nav-imagem" href="../index.html"
+          ><img id="logo" src="/logoPizzaria.png" alt="logo da pizzaria"
+        /></a>
+        <a class="links nav-cardapio" href="../index.html#premium"
+          ><i class="fa-solid fa-calendar-minus"></i>Cardápio</a
+        >
+        <a class="links nav-monte-sua-pizza" href="/html/monte-sua.html"
+          ><i class="fa-solid fa-pizza-slice"></i>Monte sua pizza</a
+        >
+        <a class="links nav-login" href="/html/cadastro.html"
+          ><i class="fa-solid fa-user"></i>Cadastro</a
+        >
+      </nav>
+          
+    </header>
+
+    <main class="container lg:max-w-screen-lg mx-auto mt-48 p-4 gap-3 h-full">
+      <button id="remove" class="text-2xl">
+        <i class="fa-solid fa-trash text-xl"> Remover</i>
+      </button>
+      <div class="grid grid-cols-3" id="usersList"></div>
+    </main>
+
+    <footer class="footer-block">
+      <div class="footer">
+        <img class="footer-image" src="/logoPizzaria.png" />
+        <p class="footer-escrita">
+          A essência DaPizza vem da transparência, da simplicidade,<br />
+          da força do produto e da sua qualidade palpável.<br />
+          DaPizza, sua melhor opção na hora de pedir pizza!
+        </p>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa fa-brands fa-instagram links"></i
+        ></a>
+        <a href="https://pt-br.facebook.com/" target="_blank"
+          ><i class="fa fa-brands fa-facebook links"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/scriptCadastro.js"></script>
+    <script type="module" src="../js/scriptUser.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f1952cfd14.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
