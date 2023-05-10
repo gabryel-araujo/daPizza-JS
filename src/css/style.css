@@ -441,6 +441,6 @@ header :nth-child(7) {
 .bodyCadastro,
 .bodyUsuarios {
   background-image: url(/madeira-bg.png);
-  background-position: center;
-  background-position-y: -130px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
